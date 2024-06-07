@@ -401,7 +401,10 @@ In this step, we integrate our prompt generation chain with a FastAPI server and
 3. **Move `openapi-prompting.txt` to the `auto-prompt-builder/` directory:**
    - Ensure that `openapi-prompting.txt` is located in the correct directory for reading.
 
-#### 2. Serving the Application by LangServe
+
+### Step 7: Serve the Application Using LangServe
+
+#### 1. Serving the Application by LangServe
    - Run the following commands to set up and serve the application using LangServe.
 
    ```bash
@@ -410,9 +413,6 @@ In this step, we integrate our prompt generation chain with a FastAPI server and
    ```
 
 Access [Prompter Playground](http://127.0.0.1:8000/prompter/playground/), be note that the port may vary depending on the configuration.
-
-   <img src="https://i.imghippo.com/files/mrGt31717603709.jpg" alt="" border="0">
-   <img src="https://i.imghippo.com/files/qxp1M1717603795.jpg" alt="" border="0">
 
 #### Key Concepts
 
