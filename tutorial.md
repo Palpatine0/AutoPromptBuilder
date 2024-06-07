@@ -1,11 +1,11 @@
-# Building an "Auto-Prompt Builder" using Langing Smith and Lang Serve
+# Auto-Prompt Builder
 
 ## Objective
 In this lab, we will build an "Auto-Prompt Builder" application using Langing Smith and Lang serve. This project involves setting up and deploying the project, creating API keys, and debugging with Lang serve.
 
 ## Prerequisites
 Before starting, ensure you have the following installed on your system:
-- Python 3.10 or higher
+- Python 3.11
 - pip (Python package installer)
 - Git (optional)
 
@@ -94,7 +94,7 @@ To manage and trace your LangChain projects, we will set up LangSmith. Follow th
      LANGCHAIN_TRACING_V2=true
      LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
      LANGCHAIN_API_KEY="your_langchain_api_key"
-     LANGCHAIN_PROJECT="your_project_name"
+     LANGCHAIN_PROJECT="AutoPromptBuilder"
      OPENAI_API_KEY="your_open_api_key"
      ```
 
