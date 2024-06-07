@@ -414,6 +414,9 @@ In this step, we integrate our prompt generation chain with a FastAPI server and
 
 Access [Prompter Playground](http://127.0.0.1:8000/prompter/playground/), be note that the port may vary depending on the configuration.
 
+<img src="https://i.imghippo.com/files/mrGt31717603709.jpg" alt="" border="0">
+<img src="https://i.imghippo.com/files/qxp1M1717603795.jpg" alt="" border="0">
+
 #### Key Concepts
 
 ##### 1. FastAPI
