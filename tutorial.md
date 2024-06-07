@@ -428,11 +428,4 @@ Access [Prompter Playground](http://127.0.0.1:8000/prompter/playground/), be not
   app = FastAPI()
   ```
 
-##### 2. LangServe
-- **Definition:** LangServe is a tool for deploying and serving LangChain applications.
-- **Usage:** Used to serve the application and manage the API endpoints.
-- **Code Example:**
-  ```bash
-  langchain serve
-  ```
  
