@@ -314,6 +314,25 @@ In this step, we add the functionality to create prompt templates and generate r
   chain = prompt | ChatOpenAI(model="gpt-4-1106-preview", temperature=0) | StrOutputParser()
   ```
 
+##### 4. Operator `|`
+- **Definition:** The `|` operator is used to chain together multiple operations, passing the output of one operation as the input to the next. 
+- **Usage:** It allows for a clean and readable way to construct a sequence of data processing steps.
+- **Code Example:**
+  ```python
+  def add_five(number):
+    return number + 5
+
+  def square(number):
+    return number * number
+
+  def subtract_three(number):
+    return number - 3
+
+  # Chaining operations using the | operator
+  result = 2 | add_five | square | subtract_three
+  print(result)  # Output: 64
+  ```
+
 ### Step 6: Integrate Prompt Generation Chain with FastAPI and Setup LangServe
 
 In this step, we integrate our prompt generation chain with a FastAPI server and set up LangServe for serving the application.
