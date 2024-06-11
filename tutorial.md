@@ -314,14 +314,6 @@ In this step, we add the functionality to create prompt templates and generate r
   chain = prompt | ChatOpenAI(model="gpt-4-1106-preview", temperature=0) | StrOutputParser()
   ```
 
-##### 4. Task Objectives
-- **Definition:** Clear and specific goals that guide the generation of prompts and responses.
-- **Usage:** Task objectives are passed as inputs to the chain to generate context-specific outputs.
-- **Code Example:**
-  ```python
-  task = "answer a question based on context provided, and ONLY on that context."
-  ```
-
 ### Step 6: Integrate Prompt Generation Chain with FastAPI and Setup LangServe
 
 In this step, we integrate our prompt generation chain with a FastAPI server and set up LangServe for serving the application.
