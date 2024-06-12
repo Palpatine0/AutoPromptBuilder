@@ -92,8 +92,6 @@ In this step, we will set up LangServe to manage our application deployment.
 
 ### Step 3: Setup LangSmith
 
-#### Access LangSmith
-
 To manage and trace your LangChain projects, we will set up LangSmith. Follow the steps below to get your API key and
 create a project.
 
@@ -132,10 +130,10 @@ create a project.
 #### 3: Create a Project
 
 1. **Create a New Project:**
-    From the LangSmith dashboard, click on "New Project".
-    <img src="https://i.imghippo.com/files/l0evk1717503570.jpg" alt="" border="0">
-    Enter the project name (`AutoPromptBuilder`) and other details, then click "Submit".
-    <img src="https://i.imghippo.com/files/DtxiA1717503612.jpg" alt="" border="0">
+   From the LangSmith dashboard, click on "New Project".
+   <img src="https://i.imghippo.com/files/l0evk1717503570.jpg" alt="" border="0">
+   Enter the project name (`AutoPromptBuilder`) and other details, then click "Submit".
+   <img src="https://i.imghippo.com/files/DtxiA1717503612.jpg" alt="" border="0">
 
 #### Key Concepts
 
@@ -176,8 +174,8 @@ In this step, we will set up LangChain for prompt engineering and output parsing
 effective prompts.
 
 1. **Create `main.py`:**
-    
-    This script sets up LangChain prompts and output parsing, and loads environment variables from the `.env` file.
+
+   This script sets up LangChain prompts and output parsing, and loads environment variables from the `.env` file.
 
    `main.py`:
    ```python
@@ -315,6 +313,7 @@ chain.
    ```
 
 #### 2. Test the File
+
    <img src="https://i.imghippo.com/files/hUTgb1717598567.jpg" alt="" border="0">
    Your LangSmith now should have successfully tracking your prompt.
    <img src="https://i.imghippo.com/files/vDpOM1717598770.jpg" alt="" border="0">
