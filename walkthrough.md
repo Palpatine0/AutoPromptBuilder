@@ -118,22 +118,23 @@ create a project.
    Provide a description for your API key, select "Personal Access Token", and click "Create API Key".
    <img src="https://i.imghippo.com/files/oyioV1717504162.png" alt="" border="0">
 
-3. **Store the API Key:**
-    - Copy the generated API key and store it securely. Add it to your `.env` file:
+1. **Update your `.env` file:**
+
+   Copy the generated API key and store it securely. Add it to your `.env` file:
       ```plaintext
+      LANGCHAIN_API_KEY="your_langchain_api_key"
       LANGCHAIN_TRACING_V2=true
       LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
-      LANGCHAIN_API_KEY="your_langchain_api_key"
       LANGCHAIN_PROJECT="AutoPromptBuilder" 
       ```
 
 #### 3: Create a Project
 
-1. **Create a New Project:**
-   From the LangSmith dashboard, click on "New Project".
-   <img src="https://i.imghippo.com/files/l0evk1717503570.jpg" alt="" border="0">
-   Enter the project name (`AutoPromptBuilder`) and other details, then click "Submit".
-   <img src="https://i.imghippo.com/files/DtxiA1717503612.jpg" alt="" border="0">
+- **Create a New Project:**
+  From the LangSmith dashboard, click on "New Project".
+  <img src="https://i.imghippo.com/files/l0evk1717503570.jpg" alt="" border="0">
+  Enter the project name (`AutoPromptBuilder`) and other details, then click "Submit".
+  <img src="https://i.imghippo.com/files/DtxiA1717503612.jpg" alt="" border="0">
 
 #### Key Concepts
 
@@ -151,20 +152,50 @@ create a project.
     - **Debugging and Diagnostics:** Advanced debugging tools to quickly identify and resolve issues. Features include
       detailed logging, tracebacks, and diagnostic reports to maintain application health and performance.
 
-##### 2. LangSmith Environment Variables
+##### 2. LANGCHAIN_API_KEY
 
-By setting these environment variables, you can fully leverage Langchain's tracing capabilities, configure the API
-endpoint, manage authentication with your API key, and organize your operations under specific projects.
+- **Definition**: `LANGCHAIN_API_KEY` is a unique identifier used to authenticate API requests associated with your
+  LangSmith account. It is crucial for securely interacting with LangSmith's services.
+- **Usage**: The API key is added to your application's environment settings to enable authenticated communication with
+  LangSmith's API. This key ensures that only authorized requests are processed.
+- **Example**:
+  ```plaintext
+  LANGCHAIN_API_KEY="your_langchain_api_key"
+  ```
 
-- **`LANGCHAIN_TRACING_V2`**: this variable activates detailed tracing of the operations within your Langchain
-  application. This is particularly useful for debugging and performance monitoring.
-- **`LANGCHAIN_ENDPOINT`**: Set this variable to the URL of the Langchain API endpoint you want to interact with. This
-  can be used to direct your application to the appropriate API server.
-- **`LANGCHAIN_API_KEY`**: Set this variable with your unique API key to authenticate your requests to the Langchain
-  API. The API key is used to ensure secure communication between your application and the Langchain API.
-- **`LANGCHAIN_PROJECT`**: Set this variable to the name of your project to organize and manage different Langchain
-  operations under a specific project context. This helps in keeping track of resources and tracing logs specific to a
-  project.
+##### 3. LANGCHAIN_TRACING_V2
+
+- **Definition**: `LANGCHAIN_TRACING_V2` is a configuration setting that enables enhanced tracing capabilities for your
+  LangChain applications. It allows you to track and monitor the execution flow, performance, and other critical metrics
+  of your LangChain workflows.
+- **Usage**: Setting this to `true` activates the advanced tracing features provided by LangSmith, helping you gain
+  deeper insights into your application's behavior and performance.
+- **Example**:
+  ```plaintext
+  LANGCHAIN_TRACING_V2=true
+  ```
+
+##### 4. LANGCHAIN_ENDPOINT
+
+- **Definition**: `LANGCHAIN_ENDPOINT` specifies the API endpoint URL for LangSmith. This endpoint is where your
+  application sends API requests to interact with LangSmith's services.
+- **Usage**: This configuration ensures that your application communicates with the correct server for LangSmith's API.
+  It is essential for enabling LangSmith's tracing and project management functionalities.
+- **Example**:
+  ```plaintext
+  LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+  ```
+
+#### 5. LANGCHAIN_PROJECT
+
+- **Definition**: `LANGCHAIN_PROJECT` specifies the name of the project in LangSmith that your application is associated
+  with. This setting helps in organizing and managing different LangChain workflows within a specific project.
+- **Usage**: By setting this configuration, you ensure that all tracing and monitoring data from your LangChain
+  application is correctly attributed to the designated project in LangSmith.
+- **Example**:
+  ```plaintext
+  LANGCHAIN_PROJECT="AutoPromptBuilder"
+  ```
 
 ### Step 4: Add LangChain Setup and Prompt Guidelines
 
